@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="newJavaScript.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Yehuda Calculator</title>
+</head>
+<div class="Calculator">
+    <textarea rows="4" cols="50" readonly id="textField"></textarea>
+    <div id="digits">
+        <button class="button" id="1" onclick="writeDigit(this)">1</button>
+        <button class="button" id="2" onclick="writeDigit(this)">2</button>
+    </div>
+    <div id="operations">
+        <button class="button" id="+" onclick="writeOperator(this)">+</button>
+        <button class="button" id="-" onclick="writeOperator(this)">-</button>
+        <button class="button" id="=" onclick="calculate(this)">=</button>
+        <button class="button" id="delete" onclick="deleteDigit()"><-</button>
+    </div>
+    <button class="AddButton" id="addButton" onclick="add()">Add digit</button>
+    <br>
+    <button class="StartOverButton" id="startOverButton" onclick="startOver()">Start Over</button>
+</div>
+
+</body>
+
+
+</html>
